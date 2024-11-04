@@ -1,0 +1,18 @@
+<div>
+    <label>Enter Author ID: </label>
+    <input type="number" [(ngModel)]="authorId" />
+    <button (click)="searchAuthor()">Search</button>
+  </div>
+  
+  <div *ngIf="authorData">
+    <h2>{{ authorData.firstName }} {{ authorData.lastName }}</h2>
+    <h3>Books:</h3>
+    <ul>
+      <li *ngFor="let book of authorData.books">{{ book.title }}</li>
+    </ul>
+  </div>
+  
+  <div *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>
+  

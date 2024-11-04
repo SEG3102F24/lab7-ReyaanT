@@ -7,10 +7,15 @@ import {BookComponent} from "./books/book/book.component";
 import {LoginComponent} from "./login/login.component";
 import {AdminComponent} from "./admin/admin.component";
 import {loggedInGuard} from "./logged-in.guard";
+import { AuthorComponent } from './author/author.component';
+
+
+
 
 const booksRoutes: Routes = [
   {path: ':id', component: BookComponent}
 ];
+
 
 export const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -25,6 +30,7 @@ export const routes: Routes = [
   {path: 'books', component: BooksComponent,
     children: booksRoutes
   },
+  { path: 'authors', component: AuthorComponent },
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: HomeComponent}
 ];

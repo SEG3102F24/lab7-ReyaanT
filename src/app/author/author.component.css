@@ -1,0 +1,109 @@
+
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+ 
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
+
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+ 
+
+
+  input[type="number"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+ 
+  input[type="number"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+ 
+
+
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+ 
+  button:hover {
+    background-color: #0056b3;
+  }
+ 
+ 
+  .author-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9f7f9;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .author-info h2 {
+    margin: 0;
+    color: #007bff;
+  }
+ 
+  .author-info h3 {
+    margin: 10px 0 5px;
+    color: #333;
+  }
+ 
+  .author-info ul {
+    padding-left: 20px;
+  }
+ 
+  .author-info li {
+    margin-bottom: 5px;
+  }
+ 
+
+
+  .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    max-width: 400px;
+    text-align: center;
+  }
